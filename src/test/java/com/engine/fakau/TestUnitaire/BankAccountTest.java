@@ -55,7 +55,7 @@ public class BankAccountTest {
 
     @Test
     @Order(3)
-    public void getAllBankAccount(){
+    public void getAllBankAccountTest(){
         List<BankAccount> bankAccounts = bankAccountRepository.findAll();
         assertNotNull(bankAccounts);
         System.out.println("\n");
@@ -93,7 +93,7 @@ public class BankAccountTest {
 
     @Test
     @Order(7)
-    public void findMaxBankAccountAmmout(){
+    public void findMaxBankAccountAmmoutTest(){
         BigDecimal ammout  = bankAccountRepository.findMaxBankAccountAmmout();
         System.out.println("Max amount :"+ammout);
         assertNotNull(ammout);
@@ -102,7 +102,7 @@ public class BankAccountTest {
 
     @Test
     @Order(8)
-    public void findAllBankAccountWithMaxAmmout(){
+    public void findAllBankAccountWithMaxAmmoutTest(){
         List<BankAccount> bankAccounts = bankAccountRepository.findAllBankAccountWithMaxAmmout();
         System.out.println(bankAccounts);
         assertNotNull(bankAccounts);

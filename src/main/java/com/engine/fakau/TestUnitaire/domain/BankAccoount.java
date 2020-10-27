@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "bank_accoount")
 public class BankAccoount {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "bank_account_no", nullable = false)
     private String bankAccountNo;
